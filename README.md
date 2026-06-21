@@ -14,8 +14,8 @@ The true effect baked into the simulation is **+2.0pp**. The project shows three
 
 | Estimator | What it compares | Result | Why it's wrong / right |
 |---|---|---|---|
-| Naive cross-section | Treated vs control cities, after rollout | **~+4.6pp** | Biased: treated cities were already higher before the feature existed |
-| Naive pre/post | Treated cities, before vs after | **~+3.2pp** | Biased: conversion was trending up for everyone anyway |
+| Naive cross-section | Treated vs control cities, after rollout | **~+5.3pp** | Biased: treated cities were already higher before the feature existed |
+| Naive pre/post | Treated cities, before vs after | **~+3.1pp** | Biased: conversion was trending up for everyone anyway |
 | **Difference-in-differences** | Treated change minus control change | **~+1.9pp** | Differences out both the city gap and the time trend, recovering the truth |
 
 The intuition: the control cities' before-to-after change tells you what would have happened to the treated cities without the feature. DiD is just "treated change minus that counterfactual." Each naive estimator forgets one of the two things that were changing.
