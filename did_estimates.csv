@@ -1,0 +1,4 @@
+method,estimate_pp,note
+Naive cross-section (post only),5.302509384997242,biased by baseline city differences
+Naive pre/post (treated only),3.0744055749380244,biased by the common time trend
+Difference-in-differences (2x2),1.895046909038317,differences both out - recovers the truth
